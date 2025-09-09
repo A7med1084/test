@@ -41,5 +41,17 @@ li a {
 }
 .landing-img img {
     width: 100%;
-
+}
+.video {
+    width: 90%;
+    margin: 40px auto;
+}
+video {
+    width: inherit;
+}
+video::cue {
+    color: rgb(255, 98, 0);
+    font-weight: bold;
+    line-height: 3;
+    background-color: transparent;
 }
