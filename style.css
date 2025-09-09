@@ -19,6 +19,7 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
+    background-color: #a398d5;
 }
 li {
     display: flex;
