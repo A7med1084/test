@@ -1,57 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-header {
-    text-transform: uppercase;
-    background-color: #816cdb;
-    height: 60px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-li {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-}
-li img {
-    width: 100px;
-    border-radius: 50%;
-}
-li a {
-    text-decoration: none;
-    color: #000;
-    margin-top: 10px;
-}
-.landing-img {
-    padding: 20px;
-    background-color: #ddd;
-}
-.landing-img img {
-    width: 100%;
-}
-.video {
-    width: 90%;
-    margin: 40px auto;
-}
-video {
-    width: inherit;
-}
-video::cue {
-    color: rgb(255, 98, 0);
+.typing {
+    font-size: 50px;
     font-weight: bold;
-    line-height: 3;
-    background-color: transparent;
+    font-family: monospace;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    animation:
+        typing 4s steps(11, end) 3,
+        blinkCursor .8s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 11ch;
+    }
+
+    30% {
+        width: 0ch;
+    }
+
+    60% {
+        width: 11ch;
+    }
+
+    100% {
+        width: 11ch;
+    }
+
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
 }
